@@ -25,13 +25,14 @@ For CUDA execution, install the PyTorch 1.13.1 build appropriate to the local CU
 
 ## Reproduction workflow
 
-1. Download ERA5-Land total precipitation, 2 m temperature, total evaporation, and snow depth from CDS. Use `src/data/download_era5_land.py` as the request template.
+1. Download ERA5-Land total precipitation, 2 m temperature, total evaporation, and snow depth from CDS with `src/data/download_era5_land.py`.
 2. Supply local catchment and interval shapefiles plus a lawfully obtained runoff table. Set `RUNOFF_DATA_ROOT`, `BASIN_SHP_DIR`, `ERA5_PRECIP_DIR`, `ERA5_EVAP_DIR`, and `RUNOFF_DATA_PATH` as required.
-3. Run `src/data/preprocess_era5_land.py` to derive daily precipitation and evaporation using 24-hour accumulations. Temperature and snow-depth processing use daily means in the associated preprocessing workflow.
-4. Use the model scripts in `src/models/` with the 90-day input window, chronological split, and seed `222` defined in `config/study_config.yaml`.
-5. Consult `config/selected_hyperparameters.csv` for the reported lead-specific optimized parameters. Use `run_fixed_lstm_transformer_shap_analysis.py` for the fixed-architecture attribution sensitivity analysis.
-6. Run `run_lstm_transformer_factor_combinations.py`, `run_seasonal_baseline_control.py`, and `src/analysis/qz_shigu_cross_correlation.py` for the supporting analyses.
-7. Use scripts in `src/figures/` to regenerate the manuscript figures from locally generated non-restricted summary tables.
+3. Run `src/data/preprocess_era5_land.py` to derive daily precipitation and evaporation using 24-hour accumulations. Run `src/data/aggregate_daily_state_variables.py` to derive basin-average daily mean temperature and snow depth.
+4. Run `src/data/construct_samples.py` to construct 90-day chronological windows for each lead time. The model scripts use the same sample definition internally.
+5. Use the model scripts in `src/models/` with the 90-day input window, chronological split, and seed `222` defined in `config/study_config.yaml`.
+6. Consult `config/selected_hyperparameters.csv` for the reported lead-specific optimized parameters. Use `run_fixed_lstm_transformer_shap_analysis.py` for the fixed-architecture attribution sensitivity analysis.
+7. Run `run_lstm_transformer_factor_combinations.py`, `run_seasonal_baseline_control.py`, and `src/analysis/qz_shigu_cross_correlation.py` for the supporting analyses.
+8. Use scripts in `src/figures/` to regenerate the manuscript figures from locally generated non-restricted summary tables.
 
 ## Key conventions
 

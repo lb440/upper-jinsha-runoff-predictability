@@ -1,0 +1,14 @@
+# Restricted data and all generated outputs stay local.
+data/private/
+outputs/
+*.grib
+*.nc
+*.zip
+*.pt
+*.pth
+__pycache__/
+*.py[cod]
+.ipynb_checkpoints/
+.vscode/
+.idea/
+.DS_Store

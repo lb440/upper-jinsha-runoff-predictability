@@ -1,0 +1,29 @@
+﻿Model,Lead time (d),random_seed,best_validation_NSE,optimized_parameters
+Persistence,1,222,0.9860156419529702,None
+XGBoost,1,222,0.8952300218243642,n_estimators=500; max_depth=5; learning_rate=0.04218076478086149; subsample=0.6193121092845985; colsample_bytree=0.3928087500062245; colsample_bylevel=0.5150191430782692; colsample_bynode=0.6376839361802098; min_child_weight=29.62518154519885; reg_alpha=0.5585485357840262; reg_lambda=4.448167696139149; gamma=1.079353465362155
+MLP,1,222,0.9461992271244526,batch_size=32; mlp_hidden=256; lr=0.0001
+GRU,1,222,0.9477124722604533,batch_size=16; gru_hidden=256; lr=0.0005
+LSTM,1,222,0.9474726766347885,batch_size=16; lstm_hidden=256; lr=0.0003
+Transformer,1,222,0.9229727387428284,batch_size=16; d_model=64; nhead=2; lr=0.0003
+LSTM-Transformer,1,222,0.961666639894247,batch_size=16; d_model=128; nhead=4; lstm_hidden=256; fusion_hidden=128; lr=0.0001
+Persistence,3,222,0.9261700178033798,None
+XGBoost,3,222,0.8996792678630211,n_estimators=600; max_depth=4; learning_rate=0.06266096789523022; subsample=0.7657527604763925; colsample_bytree=0.5348018002894244; colsample_bylevel=0.7991754710634181; colsample_bynode=0.5398980169171551; min_child_weight=23.54329904116758; reg_alpha=2.2270814115826; reg_lambda=23.751391037923742; gamma=6.456988707315992
+MLP,3,222,0.9404379464685917,batch_size=64; mlp_hidden=128; lr=0.001
+GRU,3,222,0.9416023728667174,batch_size=16; gru_hidden=256; lr=0.0003
+LSTM,3,222,0.9505487605929375,batch_size=32; lstm_hidden=128; lr=0.001
+Transformer,3,222,0.9345242083072662,batch_size=16; d_model=128; nhead=2; lr=0.001
+LSTM-Transformer,3,222,0.9609999693930149,batch_size=16; d_model=128; nhead=4; lstm_hidden=256; fusion_hidden=128; lr=0.0001
+Persistence,7,222,0.8141567115643984,None
+XGBoost,7,222,0.8569388638907255,n_estimators=700; max_depth=3; learning_rate=0.03080577921272024; subsample=0.6776354285586261; colsample_bytree=0.6174000729999664; colsample_bylevel=0.311386726657623; colsample_bynode=0.5056139714332722; min_child_weight=15.744842780993645; reg_alpha=0.0037874178324217253; reg_lambda=1.688305972253424; gamma=1.0276021970479037
+MLP,7,222,0.8767203465104103,batch_size=64; mlp_hidden=256; lr=0.001
+GRU,7,222,0.8804069117088076,batch_size=32; gru_hidden=128; lr=0.001
+LSTM,7,222,0.8879761919379234,batch_size=32; lstm_hidden=64; lr=0.001
+Transformer,7,222,0.8849472105503082,batch_size=16; d_model=128; nhead=2; lr=0.001
+LSTM-Transformer,7,222,0.8939407840371132,batch_size=16; d_model=128; nhead=4; lstm_hidden=256; fusion_hidden=128; lr=0.0001
+Persistence,15,222,0.6198034906655947,None
+XGBoost,15,222,0.7976687092058159,n_estimators=400; max_depth=4; learning_rate=0.036178345376621; subsample=0.5173352691748027; colsample_bytree=0.5014959629427257; colsample_bylevel=0.6646959946568793; colsample_bynode=0.6841705703571499; min_child_weight=23.84156326752051; reg_alpha=0.23060111561764202; reg_lambda=1.1263793265860396; gamma=6.745594535472787
+MLP,15,222,0.7861380726099014,batch_size=64; mlp_hidden=128; lr=0.001
+GRU,15,222,0.7916398457430776,batch_size=32; gru_hidden=32; lr=0.0005
+LSTM,15,222,0.7992812395095825,batch_size=16; lstm_hidden=64; lr=0.001
+Transformer,15,222,0.7805134057998657,batch_size=128; d_model=256; nhead=4; lr=0.001
+LSTM-Transformer,15,222,0.8279654681682587,batch_size=32; d_model=128; nhead=4; lstm_hidden=128; fusion_hidden=64; lr=0.001

@@ -1,0 +1,12 @@
+column,unit,description,availability
+Date,ISO-8601 calendar date,Date associated with the predictor vector,Public schema only
+Q_shigu,m3 s-1,Target runoff at Shigu station,Restricted third-party observation
+Qz,m3 s-1,Upstream runoff at Zhimenda station,Restricted third-party observation
+Pz,m,ERA5-Land daily total precipitation for the Zhimenda catchment,Open ERA5-Land derived
+Tz,degree C,ERA5-Land daily mean 2 m temperature for the Zhimenda catchment,Open ERA5-Land derived
+Ez,m water equivalent,ERA5-Land daily total evaporation for the Zhimenda catchment; native negative sign retained,Open ERA5-Land derived
+Sz,m,ERA5-Land daily mean snow depth for the Zhimenda catchment,Open ERA5-Land derived
+Pi,m,ERA5-Land daily total precipitation for the Zhimenda-Shigu interval,Open ERA5-Land derived
+Ti,degree C,ERA5-Land daily mean 2 m temperature for the Zhimenda-Shigu interval,Open ERA5-Land derived
+Ei,m water equivalent,ERA5-Land daily total evaporation for the Zhimenda-Shigu interval; native negative sign retained,Open ERA5-Land derived
+Si,m,ERA5-Land daily mean snow depth for the Zhimenda-Shigu interval,Open ERA5-Land derived

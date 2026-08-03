@@ -1,0 +1,26 @@
+study:
+  seed: 222
+  input_window_days: 90
+  lead_times_days: [1, 3, 7, 15]
+  train_end: "2014-12-31"
+  validation_end: "2016-12-31"
+  test_end: "2020-12-31"
+data:
+  date_column: "Date"
+  target_column: "Q_shigu"
+  predictors: [Qz, Pz, Tz, Ez, Sz, Pi, Ti, Ei, Si]
+  restricted_observed_runoff: true
+fixed_shap_model:
+  batch_size: 16
+  d_model: 128
+  nhead: 4
+  lstm_hidden: 256
+  fusion_hidden: 128
+  learning_rate: 0.0001
+  dropout: 0.1
+  transformer_feedforward_dimension: 256
+  max_epochs: 100
+  early_stopping_patience: 10
+  weight_decay: 0.0001
+  shap_background_samples: 200
+  shap_test_samples: 400

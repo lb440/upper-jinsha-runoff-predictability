@@ -1,0 +1,9 @@
+﻿Lead time (d),NSE,KGE,RMSE,MAE,Model setting,Delta NSE vs optimized,Delta KGE vs optimized
+1,0.9691,0.9695,214.7772,123.2176,Lead-specific independently optimized LSTM-Transformer,0.0,0.0
+1,0.9656,0.9738,226.7368,127.8876,Fixed-architecture LSTM-Transformer used for SHAP,-0.0034999999999999476,0.0042999999999999705
+3,0.9653,0.9709,227.9456,125.8067,Lead-specific independently optimized LSTM-Transformer,0.0,0.0
+3,0.9685,0.9829,216.9145,118.7848,Fixed-architecture LSTM-Transformer used for SHAP,0.0031999999999999806,0.01200000000000001
+7,0.924,0.9602,337.2017,184.7003,Lead-specific independently optimized LSTM-Transformer,0.0,0.0
+7,0.9278,0.9516,328.5504,193.2033,Fixed-architecture LSTM-Transformer used for SHAP,0.0037999999999999146,-0.008600000000000052
+15,0.8637,0.8087,451.4167,273.9648,Lead-specific independently optimized LSTM-Transformer,0.0,0.0
+15,0.86,0.8341,457.5446,267.0835,Fixed-architecture LSTM-Transformer used for SHAP,-0.0037000000000000366,0.025399999999999978

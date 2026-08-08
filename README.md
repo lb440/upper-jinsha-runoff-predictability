@@ -57,4 +57,4 @@ For CUDA execution, install the PyTorch 1.13.1 build appropriate to the local CU
 
 ## Citation
 
-If you use this code, cite the associated manuscript once a DOI is assigned. A fixed, versioned archival release is prepared for manuscript submission; its DOI will be added here when the Zenodo record is registered.
+The fixed submission-stage release is archived on Zenodo: https://doi.org/10.5281/zenodo.21853970. If you use this code or the accompanying non-restricted summary data, cite this archived release and the associated manuscript.
